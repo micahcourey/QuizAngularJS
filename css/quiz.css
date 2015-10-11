@@ -104,8 +104,28 @@ body { background-color: #fff; padding: 20px; }
   display: block;
   width: 20px;
   height: 20px;
-  background: #777 no-repeat 0px 0px; background-size: 20px 20px;
+  background: no-repeat 0px 0px; background-size: 20px 20px;
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+#quiz .question .ans.selected::after {
+  background-image: url(../images/icon_incorrect.svg);
+}
+
+#quiz .question .ans.correct::after {
+  background-image: url(../images/icon_correct.svg);
+}
+
+#quiz .question.unanswered .ans {
+  cursor: pointer;
+}
+
+#quiz .question.unanswered .ans:hover {
+  background-color:  rgba(238,189,102,.2);
+}
+
+#quiz .question.answered .ans {
+  cursor: default;
 }
