@@ -24,7 +24,10 @@
 				{{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered' }}
 				" ng-repeat="myQuestion in myQuestions">
 				<p class="txt">{{myQuestion.question}}</p>
-				<p class="ans" ng-click="selectAnswer($parent.$index, $index)" ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
+				<p class="ans"
+					ng-class="{ selected:isSelected($parent.$index, $index), correct:isCorrect($parent.$index, $index) }"
+					ng-click="selectAnswer($parent.$index, $index)"
+				  ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
 				<div class="feedback">
 					<p>You are <strong>correct</strong></p>
 					<p>Sorry thats not correct</p>
