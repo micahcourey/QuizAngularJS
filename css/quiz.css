@@ -129,3 +129,19 @@ body { background-color: #fff; padding: 20px; }
 #quiz .question.answered .ans {
   cursor: default;
 }
+
+/* feedback */
+
+#quiz .feedback {
+  color: #efbe5e;
+  margin-top: 10px;
+  transition: opacity 1.5s, margin-top 1.5s;
+}
+
+#quiz .feedback .btn {
+  margin-top: 5px;
+}
+
+#quiz .feedback strong {
+  color: #459a2e;
+}
