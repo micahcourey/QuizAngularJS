@@ -11,6 +11,24 @@ body { background-color: #fff; padding: 20px; }
    background: #000 url(../images/background.jpg) no-repeat 0px 0px;
 }
 
+#quiz h1 {
+  font-weight: 100;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0px;
+  position: absolute;
+  top: 25px;
+  left: 36px;
+}
+
+#quiz h1 span {
+  display: block;
+  font-weight: 900;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 3.2em;
+  line-height: 65px;
+}
+
 #quiz h2 {
   font-size: 3em;
   margin: 0px;
@@ -46,4 +64,48 @@ body { background-color: #fff; padding: 20px; }
 
 #quiz .intro p {
   margin: 0px 0px 40px 0pz;
+}
+
+/* Questions */
+
+#quiz .question {
+  width: 550px;
+  position: absolute;
+  top: 225px;
+  left: 40px;
+}
+
+#quiz .question .txt {
+  font-size: 1.6em;
+  margin: 0px 0px 20px 0px;
+}
+
+#quiz .question .ans {
+  display: inline-block;
+  font-size: 1.1em;
+  width: 225px;
+  border: 2px solid rgba(238,189,102,.4);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 0px 15px 15px 0px;
+  position: relative;
+}
+
+#quiz .question .ans.selected {
+  border-color: #be4b16;
+}
+
+#quiz .question .ans.correct {
+  border-color: #459a2e;
+}
+
+#quiz .question .ans::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #777 no-repeat 0px 0px; background-size: 20px 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
