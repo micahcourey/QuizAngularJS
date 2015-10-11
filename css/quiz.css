@@ -212,7 +212,7 @@ body { background-color: #fff; padding: 20px; }
   position: absolute;
   top: 225px;
   left: 660px;
-  width: 550;
+  width: 550px;
 }
 
 #quiz .results .share {
@@ -247,4 +247,15 @@ body { background-color: #fff; padding: 20px; }
 
 #quiz .intro.inactive, #quiz.inactive.answered {
   left: -1350px;
+}
+
+/****************** test *****************/
+
+#quiz {
+  height: 1000px;
+}
+
+#quiz .results {
+  top: 650px !important;
+  left: 40px !important;
 }
