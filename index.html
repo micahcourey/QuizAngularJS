@@ -19,8 +19,9 @@
 				<p>Click begin to test your knowledge of Saturn.</p>
 				<p class="btn" ng-click="activeQuestion = 0">Begin</p>
 			</div>
-			<div class="question answered
+			<div class="question
 				{{ $index === activeQuestion ? 'active' : 'inactive' }}
+				{{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered' }}
 				" ng-repeat="myQuestion in myQuestions">
 				<p class="txt">{{myQuestion.question}}</p>
 				<p class="ans" ng-click="selectAnswer($parent.$index, $index)" ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
