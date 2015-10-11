@@ -8,7 +8,7 @@
 		$scope.percentage = 0;
 
 		$http.get('quiz_data.json').then(function(quizData){
-				$scope.myQuesions = quizData.data;
+				$scope.myQuestions = quizData.data;
 				$scope.totalQuestions = $scope.myQuestions.length;
 		});
 	}]);
