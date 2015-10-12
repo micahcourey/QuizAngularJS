@@ -1,7 +1,7 @@
 Quiz
 ====
 
-A quiz web app.
+A quiz web app. Check it out at: http://micahcourey.github.io/QuizAngularJS
 
 Setup
 ----------
