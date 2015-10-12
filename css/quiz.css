@@ -248,14 +248,3 @@ body { background-color: #fff; padding: 20px; }
 #quiz .intro.inactive, #quiz.inactive.answered {
   left: -1350px;
 }
-
-/****************** test *****************/
-
-#quiz {
-  height: 1000px;
-}
-
-#quiz .results {
-  top: 650px !important;
-  left: 40px !important;
-}
